@@ -1,0 +1,31 @@
+<div class='card'>
+    <div class='card-header'>
+        {{title}}
+    </div>
+</div>
+<div class='table-responsive'>
+  <table class='table'>
+      <thead>
+          <tr>
+              <th>
+                  <button class='btn btn-primary'>
+                      See Answers
+                  </button>
+              </th>
+              <th>Questions</th>
+              <th>Answers</th>
+              <th>Date</th>
+              <th>Level</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor='let product of products'>
+              <td></td>
+              <td>{{product.productQuestion}}</td>
+              <td>{{product.productAnswer}}</td>
+              <td>{{product.date}}</td>
+              <td>{{product.level}}</td>
+          </tr>
+      </tbody>
+  </table>
+</div>
